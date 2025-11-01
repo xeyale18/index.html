@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+  <h1>XEYALƏ ƏLİYEVA</h1>
+  <p>AZMİU tələbəsi, 844a5 qrupunun üzvüdür.</p>
+  
+  <h3>Azerbaycan Memarliq ve Insaat Universiteti</h3>
+  
+  <div style="background: linear-gradient(to right, #b6d3ff, #adc0e6); height: 300px; display: flex; justify-content: center; align-items: center;">
+    <img id="sekil" 
+         src="https://i.pinimg.com/originals/18/ed/41/18ed414a0476f98dc539539124777250.png" 
+         alt="Xəyalənin şəkli" 
+         width="300" 
+         height="300" 
+         style="border-radius: 10px; position: relative;">
+  </div>
+
+  <script>
+    const sekil = document.getElementById("sekil");
+    let position = 0;
+    let direction = "right";
+
+    sekil.addEventListener("click", function() {
+      if (direction === "right") {
+        sekil.style.left = "200px";
+        direction = "left";
+      } else if (direction === "left") {
+        sekil.style.left = "-200px";
+        direction = "center";
+      } else {
+        sekil.style.left = "0px";
+        direction = "right";
+      }
+    });
+  </script>
+
+</body>
+</html>
